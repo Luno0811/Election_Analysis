@@ -10,6 +10,11 @@ with open(file_to_load) as election_data:
     # Print the file object.
      print(election_data)
 
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+
+with open(file_to_save, "w") as txt_file:
+
+    txt_file.write("Hello World")
 
 # Write down the names of all the candidates.
 # Add a vote count for each candidate.
